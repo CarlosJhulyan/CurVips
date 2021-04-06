@@ -1,0 +1,31 @@
+.footer {
+  background: #333;
+
+  &-sections {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px 0;
+    justify-content: space-between;
+  }
+
+  &-section {
+    width: 300px;
+
+    &__title {
+      color: antiquewhite;
+      padding-bottom: 20px;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__copyright {
+    padding: 20px;
+    border-top: 1px solid #444444;
+    color: aliceblue;
+  }
+}

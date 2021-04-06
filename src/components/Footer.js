@@ -3,36 +3,36 @@ import React from 'react';
 function Footer() {
   return (
     <footer className='footer'>
-      <section>
-        <div>
-          <h3>Curriculum Vitae</h3>
-          <div>
-            <a href='https://'>Crea tu CV al instante</a>
-            <a href='https://'>Obtén tu dashboard</a>
-            <a href='https://'>Ver todas las plantillas</a>
-          </div>
+      <section className='footer-sections'>
+        <div className='footer-section'>
+          <h3 className='footer-section__title'>Curriculum Vitae</h3>
+          <ul className='footer-section-list'>
+            <a className='footer-section-list__link' href='https://'>Crea tu CV al instante</a>
+            <a className='footer-section-list__link' href='https://'>Obtén tu dashboard</a>
+            <a className='footer-section-list__link' href='https://'>Ver todas las plantillas</a>
+          </ul>
         </div>
 
-        <div>
-          <h3>CurVips</h3>
-          <div>
-            <a href='https://'>Sobre Nosotros</a>
-            <a href='https://'>Contactanos</a>
-            <a href='https://'>Preguntas Frecuentes</a>
-          </div>
+        <div className='footer-section'>
+          <h3 className='footer-section__title'>CurVips</h3>
+          <ul className='footer-section-list'>
+            <a className='footer-section-list__link' href='https://'>Sobre Nosotros</a>
+            <a className='footer-section-list__link' href='https://'>Contáctanos</a>
+            <a className='footer-section-list__link' href='https://'>Preguntas Frecuentes</a>
+          </ul>
         </div>
 
-        <div>
-          <h3>Terminos y Legalidad</h3>
-          <div>
-            <a href='https://'>Terminos de Servicio</a>
-            <a href='https://'>Aviso Legal</a>
-            <a href='https://'>Privacidad</a>
-          </div>
+        <div className='footer-section'>
+          <h3 className='footer-section__title'>Términos y Legalidad</h3>
+          <ul className='footer-section-list'>
+            <a className='footer-section-list__link' href='https://'>Términos de Servicio</a>
+            <a className='footer-section-list__link' href='https://'>Aviso Legal</a>
+            <a className='footer-section-list__link' href='https://'>Privacidad</a>
+          </ul>
         </div>
 
       </section>
-      <section>All Rights Reserved 2021 &copy; CurVips</section>
+      <section className='footer__copyright'>All Rights Reserved 2021 &copy; CurVips</section>
     </footer>
   );
 }

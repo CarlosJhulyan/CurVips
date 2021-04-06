@@ -1,15 +1,27 @@
 .header {
-  background: aqua;
+  display: flex;
+  width: 100%;
+  height: 65px;
+  padding: 0 100px;
+  justify-content: space-between;
+  align-items: center;
+  background: brown;
 
   &__logo {
-
+    img {
+      width: 80px;
+    }
   }
 
-  &__menu {
-
+  &-menu {
+    &__item {
+      margin: 0 20px;
+    }
   }
 
-  &__account {
-
+  &-account {
+    &__item {
+      margin: 0 10px;
+    }
   }
 }
