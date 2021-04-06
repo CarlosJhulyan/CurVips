@@ -1,22 +1,36 @@
 import React from 'react';
-import { Button } from 'antd';
-import { HomeOutlined, StepForwardFilled } from '@ant-design/icons';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import './assets/styles/App.scss';
+
+// Layouts
+import Landing from './layouts/Landing';
+import Dashboard from './layouts/Dashboard';
+
+// Pages
+import Home from './pages/Home';
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <Button type='primary'>Soy un botón</Button>
-        <Button>Soy un boton default</Button>
-        <Button type='dashed'>Soy un boton default</Button>
-        <br />
-        <HomeOutlined />
-        <Button type='primary' danger>Soy un Error</Button>
-        <Button type='primary' icon={<StepForwardFilled />}>Soy un Error</Button>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path='/'><Landing><Home /></Landing></Route>
+        <Route path='/help'><Landing><div>Preguntas Frecuentes</div></Landing></Route>
+        <Route path='/templates'><Landing><div>Plantillas</div></Landing></Route>
+        <Route path='/about'><Landing><div>Acerca de nosotros</div></Landing></Route>
+        <Route path='/contact'><Landing><div>Contactanos</div></Landing></Route>
+
+        <Route path='/login'><div>Ingresar</div></Route>
+        <Route path='/register'><div>Registrate</div></Route>
+
+        <Route exact path='/dashboard'><Dashboard><div>Mi dashboard</div></Dashboard></Route>
+        <Route path='/dashboard/account'><Dashboard><div>Cuenta del usuario!</div></Dashboard></Route>
+        <Route path='/dashboard/help'><Dashboard><div>Preguntas Frecuentes!</div></Dashboard></Route>
+
+        <Route path='/app'><Dashboard><div>App</div></Dashboard></Route>
+
+        <Route path='*'><div>Page Not Found: 404</div></Route>
+      </Switch>
+    </Router>
   );
 }
 
