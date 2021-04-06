@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Avatar, Button } from 'antd';
 
 import Logo from '../logo.svg';
@@ -8,39 +9,40 @@ function Header({ logger }) {
 
   return (
     <header className='header'>
-      <a className='header__logo' href='/'>
+      <Link className='header__logo' to='/'>
         <img src={Logo} alt='Ir a home' />
-      </a>
+      </Link>
       <menu className='header-menu'>
         {!logger ? (
           <>
-            <a className='header-menu__item' href='/'>CV</a>
-            <a className='header-menu__item' href='/templates'>Plantillas</a>
-            <a className='header-menu__item' href='/contact'>Contacto</a>
-            <a className='header-menu__item' href='/about'>Acerca de</a>
+            <Link className='header-menu__item' to='/'>CV</Link>
+            <Link className='header-menu__item' to='/templates'>Plantillas</Link>
+            <Link className='header-menu__item' to='/help'>Preguntas Frecuentes</Link>
+            <Link className='header-menu__item' to='/contact'>Contacto</Link>
+            <Link className='header-menu__item' to='/about'>Acerca de</Link>
           </>
         ) : (
           <>
-            <a className='header-menu__item' href='/app'>Crea tu CV</a>
-            <a className='header-menu__item' href='/templates'>Plantillas</a>
-            <a className='header-menu__item' href='/dashboard'>dashboard</a>
+            <Link className='header-menu__item' to='/app'>Crea tu CV</Link>
+            <Link className='header-menu__item' to='/templates'>Plantillas</Link>
+            <Link className='header-menu__item' to='/dashboard'>dashboard</Link>
           </>
         )}
       </menu>
       <menu className='header-account'>
         {!logger ? (
           <>
-            <a className='header-account__item' href='/login'>Ingresar</a>
-            <Button type='primary' className='header-account__item'>
-              <a href='/register'>Regístrate</a>
+            <Link className='header-account__item' to='/login'>Ingresar</Link>
+            <Button type='primary' size='large' className='header-account__item'>
+              <Link to='/register'>Regístrate</Link>
             </Button>
           </>
         ) : (
           <>
-            <a className='header-account__item' href='/'>Log Out</a>
-            <a className='header-account__item' href='/dashboard/account'>
+            <Link className='header-account__item' to='/'>Log Out</Link>
+            <Link className='header-account__item' to='/dashboard/account'>
               <Avatar>{avatar}</Avatar>
-            </a>
+            </Link>
           </>
         )}
       </menu>

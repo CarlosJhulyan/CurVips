@@ -1,11 +1,12 @@
 .header {
   display: flex;
   width: 100%;
-  height: 65px;
+  height: 70px;
   padding: 0 100px;
   justify-content: space-between;
   align-items: center;
-  background: brown;
+  background: $color-primary-light;
+  box-shadow: 0 0 5px #919191;
 
   &__logo {
     img {
@@ -16,12 +17,16 @@
   &-menu {
     &__item {
       margin: 0 20px;
+      color: $color-dark;
+      font-size: 1.2em;
     }
   }
 
   &-account {
     &__item {
       margin: 0 10px;
+      color: $color-dark;
+      font-size: 1.2em;
     }
   }
 }

@@ -8,13 +8,14 @@ import Dashboard from './layouts/Dashboard';
 
 // Pages
 import Home from './pages/Home';
+import Help from './pages/Help';
 
 function App() {
   return (
     <Router>
       <Switch>
         <Route exact path='/'><Landing><Home /></Landing></Route>
-        <Route path='/help'><Landing><div>Preguntas Frecuentes</div></Landing></Route>
+        <Route path='/help'><Landing><Help /></Landing></Route>
         <Route path='/templates'><Landing><div>Plantillas</div></Landing></Route>
         <Route path='/about'><Landing><div>Acerca de nosotros</div></Landing></Route>
         <Route path='/contact'><Landing><div>Contactanos</div></Landing></Route>

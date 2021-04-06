@@ -1,0 +1,53 @@
+// Custom Fonts
+@font-face {
+  font-family: 'Antonio';
+  src: url("../fonts/Antonio-Regular.ttf") format('TrueType'),
+    url("../fonts/Antonio-Light.ttf") format('TrueType'),
+    url("../fonts/Antonio-Bold.ttf") format('TrueType');
+}
+
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url("../fonts/LibreBaskerville-Regular.ttf") format('TrueType'),
+  url("../fonts/LibreBaskerville-Bold.ttf") format('TrueType'),
+  url("../fonts/LibreBaskerville-Italic.ttf") format('TrueType');
+}
+
+$font-primary: 'Antonio';
+$font-secondary: 'LibreBaskerville';
+
+//============= Theme color
+$color-primary: #0070FF;
+$color-primary-light: #BCD5FF;
+$color-white: #FFFFFF;
+$color-dark: #000000;
+
+//============= Colors
+$color-danger: #CF1322;
+$color-warning: #D46B08;
+$color-success: #389E0D;
+$color-info: #096DD9;
+$color-gray-5: #F5F5F5;
+$color-gray-25: #D9D9D9;
+$color-gray-50: #8C8C8C;
+$color-gray-75: #434343;
+$color-gray-95: #1F1F1F;
+
+//============= Responsive
+
+// XX-Large >= 1400px
+$container-xxl: 1320px;
+
+// X-Large >= 1200px
+$container-xl: 1140px;
+// Large >= 992px
+$container-lg: 960px;
+
+// Medium >= 768px
+$container-md: 720px;
+
+// Small >= 576px
+$container-sm: 540px;
+
+// X-Small < 576
+$container-xs: 97%;
