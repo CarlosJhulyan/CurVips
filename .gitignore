@@ -10,7 +10,6 @@
 
 # production
 /build
-package-lock.json
 
 # misc
 .idea
