@@ -1,0 +1,23 @@
+.container-templates {
+  &__subtitle {
+    text-align: center;
+    font-size: 1.4em;
+  }
+
+  &-sec {
+    background: $color-primary-light;
+    line-height: 30px;
+
+    h6 {
+      font-weight: bold;
+      color: $color-primary;
+      font-size: 1.3em;
+      padding-bottom: 10px;
+      padding-top: 30px;
+    }
+
+    ul {
+      margin-left: 30px;
+    }
+  }
+}
