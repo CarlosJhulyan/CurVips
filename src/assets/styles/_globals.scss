@@ -27,15 +27,16 @@
     }
     &--large {
       font-size: 5em;
-      padding: 0 10%;
+      padding: 0 14%;
       text-shadow: none;
-      letter-spacing: 0;
+      letter-spacing: 5px;
     }
     &--white {
       font-size: 2.5em;
       color: $color-white;
       text-shadow: none;
-      letter-spacing: 0;
+      letter-spacing: 4px;
+      text-align: left;
     }
     &--dark {
       font-size: 2.5em;

@@ -9,14 +9,16 @@
   box-shadow: 0 0 5px #919191;
 
   &__logo {
-    img {
-      width: 120px;
-    }
+    width: 90px;
+  }
+  &__logotipo {
+    width: 40px;
+    margin-right: 10px;
   }
 
   &-menu {
     &__item {
-      margin: 0 15px;
+      margin: 0 10px;
       color: $color-dark;
       font-size: 1.2em;
     }
@@ -29,4 +31,8 @@
       font-size: 1.2em;
     }
   }
+}
+
+a[aria-current='page'] {
+  color: $color-primary;
 }

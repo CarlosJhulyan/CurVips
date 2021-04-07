@@ -1,31 +1,33 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { Avatar, Button } from 'antd';
 
-import Logo from '../logo.svg';
+import LogoTipo from '../assets/images/logo.svg';
+import Logo from '../assets/images/curvips-logo.svg';
 
 function Header({ logger }) {
   const avatar = 'LR';
 
   return (
     <header className='header'>
-      <Link className='header__logo' to='/'>
-        <img src={Logo} alt='Ir a home' />
+      <Link to='/'>
+        <img className='header__logotipo' src={Logo} alt='Ir a home' />
+        <img className='header__logo' src={LogoTipo} alt='Ir a home' />
       </Link>
       <menu className='header-menu'>
         {!logger ? (
           <>
-            <Link className='header-menu__item' to='/'>CV</Link>
-            <Link className='header-menu__item' to='/templates'>Plantillas</Link>
-            <Link className='header-menu__item' to='/help'>Preguntas Frecuentes</Link>
-            <Link className='header-menu__item' to='/contact'>Contacto</Link>
-            <Link className='header-menu__item' to='/about'>Acerca de</Link>
+            <NavLink exact className='header-menu__item' to='/'>CV</NavLink>
+            <NavLink className='header-menu__item' to='/templates'>Plantillas</NavLink>
+            <NavLink className='header-menu__item' to='/help'>Preguntas frecuentes</NavLink>
+            <NavLink className='header-menu__item' to='/contact'>Contacto</NavLink>
+            <NavLink className='header-menu__item' to='/about'>Acerca de</NavLink>
           </>
         ) : (
           <>
             <Button className='header-menu__item' type='primary' size='large'><Link to='/app'>Crea tu CV</Link></Button>
-            <Link className='header-menu__item' to='/templates'>Plantillas</Link>
-            <Link className='header-menu__item' to='/dashboard'>dashboard</Link>
+            <NavLink className='header-menu__item' to='/templates'>Plantillas</NavLink>
+            <NavLink className='header-menu__item' to='/dashboard'>dashboard</NavLink>
           </>
         )}
       </menu>
