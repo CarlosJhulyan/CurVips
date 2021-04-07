@@ -7,7 +7,7 @@ const Dashboard = ({ children }) => {
   return (
     <>
       <Header logger={true} />
-      <div>
+      <div className='daskboard'>
         <Sidebar />
         <div>{children}</div>
       </div>
