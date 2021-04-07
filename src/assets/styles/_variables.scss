@@ -1,9 +1,8 @@
 // Custom Fonts
 @font-face {
-  font-family: 'Antonio';
-  src: url("../fonts/Antonio-Regular.ttf") format('TrueType'),
-    url("../fonts/Antonio-Light.ttf") format('TrueType'),
-    url("../fonts/Antonio-Bold.ttf") format('TrueType');
+  font-family: 'MavenPro';
+  src: url("../fonts/MavenPro-Regular.ttf") format('TrueType'),
+    url("../fonts/MavenPro-Bold.ttf") format('TrueType');
 }
 
 @font-face {
@@ -13,7 +12,7 @@
   url("../fonts/LibreBaskerville-Italic.ttf") format('TrueType');
 }
 
-$font-primary: 'Antonio';
+$font-primary: 'MavenPro';
 $font-secondary: 'LibreBaskerville';
 
 //============= Theme color

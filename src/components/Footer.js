@@ -9,7 +9,7 @@ function Footer() {
           <h3 className='footer-section__title'>Curriculum Vitae</h3>
           <ul className='footer-section-list'>
             <Link className='footer-section-list__link' to='/app'>Crea tu CV al instante</Link>
-            <Link className='footer-section-list__link' to='/login'>Obtén tu dashboard</Link>
+            <Link className='footer-section-list__link' to='/register'>Obtén tu dashboard</Link>
             <Link className='footer-section-list__link' to='/templates'>Ver todas las plantillas</Link>
           </ul>
         </div>

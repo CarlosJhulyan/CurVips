@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: $font-primary;
+  font-size: 1rem;
 }
 
 .container {
@@ -13,29 +14,34 @@
     width: 100%;
     text-align: center;
     text-shadow: 0 4px 5px #ccc;
-    font-size: 4em;
+    font-size: 3.7em;
     font-family: $font-secondary;
     font-weight: bold;
     color: $color-primary;
+    letter-spacing: 3px;
 
     &--small {
-      font-size: 2.5em;
+      font-size: 2.4em;
       text-shadow: none;
+      letter-spacing: 0;
     }
     &--large {
       font-size: 5em;
       padding: 0 10%;
       text-shadow: none;
+      letter-spacing: 0;
     }
     &--white {
       font-size: 2.5em;
       color: $color-white;
       text-shadow: none;
+      letter-spacing: 0;
     }
     &--dark {
       font-size: 2.5em;
       color: $color-gray-95;
       text-shadow: none;
+      letter-spacing: 0;
     }
   }
 }

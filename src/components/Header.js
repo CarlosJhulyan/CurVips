@@ -23,7 +23,7 @@ function Header({ logger }) {
           </>
         ) : (
           <>
-            <Link className='header-menu__item' to='/app'>Crea tu CV</Link>
+            <Button className='header-menu__item' type='primary' size='large'><Link to='/app'>Crea tu CV</Link></Button>
             <Link className='header-menu__item' to='/templates'>Plantillas</Link>
             <Link className='header-menu__item' to='/dashboard'>dashboard</Link>
           </>
