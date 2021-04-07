@@ -5,8 +5,12 @@
 // components
 @import "components/Header";
 @import "components/Footer";
+@import "components/Sidebar";
 
 //pages
 @import "pages/Help";
 @import "pages/Home";
 @import "pages/Templates";
+
+// layouts
+@import "layouts/Dashboard"

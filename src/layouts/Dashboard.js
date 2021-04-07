@@ -1,15 +1,16 @@
 import React from 'react';
 
 import Header from '../components/Header';
+import Sidebar from '../components/Sidebar';
 
 const Dashboard = ({ children }) => {
   return (
     <>
       <Header logger={true} />
       <div>
-        aside
+        <Sidebar />
+        <div>{children}</div>
       </div>
-      <div>{children}</div>
     </>
   );
 };
