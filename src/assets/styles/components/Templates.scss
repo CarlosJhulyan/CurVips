@@ -1,0 +1,33 @@
+.template-item {
+  width: 350px;
+  padding: 30px;
+  margin-bottom: 40px;
+  background: $color-gray-50;
+
+  &__image {
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 0 20px $color-gray-50;
+    transition: all .5s;
+    margin-bottom: 15px;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.02, 1.02);
+      box-shadow: 0 0 20px $color-gray-75;
+    }
+  }
+}
+
+.templates-group {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+.circle-picker {
+  div {
+    width: 18px !important;
+    height: 18px !important;
+  }
+}
