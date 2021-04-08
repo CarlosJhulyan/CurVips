@@ -14,17 +14,17 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        
+
         &__link{
             color: $color-white;
             margin-left: 15px;
-            padding: 10px;            
+            padding: 10px;
         }
 
         &__link:hover{
             color: #BCD5FF;
             background-color: $color-gray-95;
-            border-radius: 25px 0px 0px 25px;
+            border-radius: 25px 0;
         }
 
         &__icon{
