@@ -26,7 +26,7 @@ const Templates = () => {
   return (
     <>
       <section className='container'>
-        <h1 className='container__title'>Plantillas de CV</h1>
+        <h1 className='container__title container__title--small'>Plantillas de CV</h1>
         <h4 className='container-templates__subtitle'>Cada plantilla se ha estructurado cuidadosamente para seguir las «reglas de currículum» que buscan los responsables de contratación. Destaca entre el resto de los candidatos y consigue que te contraten antes con plantillas de currículum probadas.</h4>
         <Tabs className='container-templates__tabs'>
           <TabPane tab={<TabIconHead Icon={SolutionOutlined} title='Todo' />} key={1}>

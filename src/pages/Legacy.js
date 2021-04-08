@@ -1,7 +1,9 @@
 import React from 'react';
 
 const Legacy = () => (
-  <div>Legacy</div>
+  <div className='container'>
+    <h2 className='container__title container__title--small'>Aviso Legal</h2>
+  </div>
 );
 
 export default Legacy;

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Row, Col, Button, Empty, Collapse } from 'antd';
 import { Link } from 'react-router-dom';
-import Background from '../assets/images/fondo-empresa.jpg';
 
 function Home() {
   const { Panel } = Collapse;
@@ -48,12 +47,9 @@ function Home() {
           </Row>
         </section>
       </div>
-      <div style={{ position: 'relative', overflow: 'hidden' }}>
-        <img src={Background} alt='Fondo' style={{ width: '100%', position: 'absolute', opacity: 0.1, pointerEvents: 'none' }} />
-        <section className='container'>
-          <h2 className='container__title container__title--small'>¿Cómo funciona?</h2>
-        </section>
-      </div>
+      <section className='container'>
+        <h2 className='container__title container__title--small'>¿Cómo funciona?</h2>
+      </section>
 
       <div style={{ background: '#BCD5FF' }}>
         <section className='container'>
@@ -82,11 +78,15 @@ function Home() {
         </section>
       </div>
 
-      <section className='container'>
-        <h1 className='container__title container__title--large'>Únete a 4 usuarios en todo el mundo</h1>
-        <h2 className='home-start__resume'>¡Empieza gratis! Regístrate ahora y obtén tu editor de CV</h2>
-        <Button className='home-start__button home-start__button--success' size='large' type='primary'><Link to='/register'>Obtén tu dashboard</Link></Button>
-      </section>
+      <div className='home-start-container'>
+        <div className='home-start-container-child'>
+          <section className='container'>
+            <h1 className='container__title container__title--large'>Únete a 4 usuarios en todo el mundo</h1>
+            <h2 className='home-start__resume'>¡Empieza gratis! Regístrate ahora y obtén tu editor de CV</h2>
+            <Button className='home-start__button home-start__button--success' size='large' type='primary'><Link to='/register'>Obtén tu dashboard</Link></Button>
+          </section>
+        </div>
+      </div>
     </>
   );
 }

@@ -4,7 +4,7 @@ import Questions from '../components/Questions';
 const Help = () => {
   return (
     <div className='container'>
-      <h1 className='container__title'>Preguntas Frecuentes</h1>
+      <h1 className='container__title container__title--small'>Preguntas Frecuentes</h1>
       <Questions />
     </div>
   );
