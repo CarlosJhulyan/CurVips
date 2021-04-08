@@ -5,8 +5,13 @@
   }
 
   &-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background: $color-gray-5;
     margin: 30px;
+    min-height: 420px;
     padding: 60px 40px 60px 40px;
     border-radius: 10px;
 

@@ -23,9 +23,10 @@ function Home() {
             <Empty />
             <Button className='home-start__button' size='large' type='primary'><Link to='/app'>Créa tu CV al instante</Link></Button>
             <ul className='home-start-list'>
-              <li>El registro es totalmente gratis y tendras acceso libre.</li>
-              <li>Tendrás acceso a tu dashboard propio donde podrás manejar tus CV creados con aterioridad.</li>
-              <li>Exportar tus CV en formatos de alta calidad: PDF, Word, PNG y compartir a tus redes sociales.</li>
+              <li>Podrás crear tu CV sin registrarte de forma instantanea y rápida.</li>
+              <li>Tendrás acceso a todas las plantillas.</li>
+              <li>Al finalizar tu CV podrás exportar en formato pdf y compartir en tus redes sociales.</li>
+              <li>Al no tener una cuenta, se perdera tu CV.</li>
             </ul>
           </Col>
         </Row>
