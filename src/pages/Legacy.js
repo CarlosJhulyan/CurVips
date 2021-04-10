@@ -17,6 +17,8 @@ const Legacy = () => (
         https://cur-vips.vercel.app/
       </a>
     </p>
+    <br />
+    <br />
   </div>
 );
 

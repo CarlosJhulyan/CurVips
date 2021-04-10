@@ -1,35 +1,46 @@
 .sidebar {
     background: $color-gray-75;
-    width: 260px;
     height: 100vh;
+    width: 100%;
+    box-shadow: 0 5px 10px $color-gray-75;
 
-    &__title {
-        color:#eee;
-        margin-top: 20px;
-        text-align: center;
+    &-head {
+        display: flex;
+        margin: 5px 15px 40px 15px;
+        justify-content: space-between;
+        align-items: center;
+
+        &__icon {height: 60px;}
+        &__title {height: 40px;}
     }
 
     &-options{
-        color: #D9D9D9;
         width: 100%;
         display: flex;
         flex-direction: column;
 
         &__link{
             color: $color-white;
+            margin: 3px 0;
             margin-left: 15px;
             padding: 10px;
+            transition: .5s;
         }
 
         &__link:hover{
-            color: #BCD5FF;
+            color: $color-primary-light;
+            padding: 10px 20px;
             background-color: $color-gray-95;
-            border-radius: 25px 0;
         }
 
         &__icon{
             margin-right: 15px;
         }
     }
+}
 
+.active-sidebar {
+    color: $color-primary-light !important;
+    background-color: $color-gray-95;
+    border-right: 6px solid $color-primary;
 }

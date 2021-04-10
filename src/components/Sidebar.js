@@ -1,25 +1,33 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { AuditOutlined, UserOutlined, QuestionOutlined } from '@ant-design/icons';
+import { NavLink } from 'react-router-dom';
+import { AuditOutlined, UserOutlined, QuestionOutlined, SnippetsOutlined } from '@ant-design/icons';
+import Logotipo from '../assets/images/curvips-logo.svg';
+import Logo from '../assets/images/logo.svg';
 
 function Sidebar() {
   return (
     <div className='sidebar'>
-      <h2 className='sidebar__title'>PANEL DE CONTROL</h2>
+      <div className='sidebar-head'>
+        <img className='sidebar-head__icon' src={Logotipo} alt='Logotipo de CurVips' />
+        <img className='sidebar-head__title' src={Logo} alt='Logo de Curvips' />
+      </div>
       <div className='sidebar-options'>
-        <Link to='/dashboard' className='sidebar-options__link'>
+        <NavLink exact activeClassName='active-sidebar' to='/dashboard' className='sidebar-options__link'>
           <AuditOutlined className='sidebar-options__icon' />
-          Currículos
-        </Link>
-        <Link to='/dashboard/account' className='sidebar-options__link'>
+          Mis Currículos
+        </NavLink>
+        <NavLink activeClassName='active-sidebar' to='/dashboard/account' className='sidebar-options__link'>
           <UserOutlined className='sidebar-options__icon' />
-          Cuenta
-        </Link>
-        <Link to='/dashboard/help' className='sidebar-options__link'>
+          Gestionar Cuenta
+        </NavLink>
+        <NavLink activeClassName='active-sidebar' to='/dashboard/templates' className='sidebar-options__link'>
+          <SnippetsOutlined className='sidebar-options__icon' />
+          Plantillas
+        </NavLink>
+        <NavLink activeClassName='active-sidebar' to='/dashboard/help' className='sidebar-options__link'>
           <QuestionOutlined className='sidebar-options__icon' />
-          Preguntas frecuentes
-        </Link>
-
+          Preguntas Frecuentes
+        </NavLink>
       </div>
     </div>
   );

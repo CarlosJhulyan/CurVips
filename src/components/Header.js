@@ -10,10 +10,14 @@ function Header({ logger }) {
 
   return (
     <header className='header'>
-      <Link to='/'>
-        <img className='header__logotipo' src={Logo} alt='Ir a home' />
-        <img className='header__logo' src={LogoTipo} alt='Ir a home' />
-      </Link>
+      {
+        !logger && (
+          <Link to='/'>
+            <img className='header__logotipo' src={Logo} alt='Ir a home' />
+            <img className='header__logo' src={LogoTipo} alt='Ir a home' />
+          </Link>
+        )
+      }
       <menu className='header-menu'>
         {!logger ? (
           <>
@@ -26,8 +30,6 @@ function Header({ logger }) {
         ) : (
           <>
             <Button className='header-menu__item' type='primary' size='large'><Link to='/app'>Crea tu CV</Link></Button>
-            <NavLink className='header-menu__item' to='/templates'>Plantillas</NavLink>
-            <NavLink className='header-menu__item' to='/dashboard'>dashboard</NavLink>
           </>
         )}
       </menu>
@@ -41,7 +43,7 @@ function Header({ logger }) {
           </>
         ) : (
           <>
-            <Link className='header-account__item' to='/'>Log Out</Link>
+            <Link className='header-account__item' to='/'>Logout</Link>
             <Link className='header-account__item' to='/dashboard/account'>
               <Avatar>{avatar}</Avatar>
             </Link>

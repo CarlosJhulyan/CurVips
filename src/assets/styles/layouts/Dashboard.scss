@@ -1,3 +1,23 @@
 .dashboard{
-    display: flex;
+    display: grid;
+    grid-template-columns: 300px auto;
+    height: 100vh;
+    overflow: hidden;
+
+    &-content {
+        overflow-y: scroll;
+        height: 100%;
+
+        &__child {
+            padding: 20px;
+        }
+    }
+
+    &__title {
+        font-family: $font-secondary;
+        font-weight: bold;
+        font-size: 2em;
+        text-transform: capitalize;
+    ;
+    }
 }

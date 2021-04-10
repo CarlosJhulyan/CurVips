@@ -21,6 +21,7 @@ import DashboardPage from './pages/Dashboard';
 import Privacy from './pages/Privacy';
 import NotFound from './pages/NotFound';
 import Questions from './components/Questions';
+import TemplatesTabs from './components/TemplatesTabs';
 
 function App() {
   return (
@@ -38,9 +39,10 @@ function App() {
         <Route exact path='/login'><Login /></Route>
         <Route exact path='/register'><Register /></Route>
 
-        <Route exact path='/dashboard'><Dashboard><DashboardPage /></Dashboard></Route>
-        <Route exact path='/dashboard/account'><Dashboard><Account /></Dashboard></Route>
-        <Route exact path='/dashboard/help'><Dashboard><Questions /></Dashboard></Route>
+        <Route exact path='/dashboard'><Dashboard title='mis currículos'><DashboardPage /></Dashboard></Route>
+        <Route exact path='/dashboard/account'><Dashboard title='gestionar cuenta'><Account /></Dashboard></Route>
+        <Route exact path='/dashboard/help'><Dashboard title='preguntas frecuentes'><Questions /></Dashboard></Route>
+        <Route exact path='/dashboard/templates'><Dashboard title='plantillas'><TemplatesTabs /></Dashboard></Route>
 
         <Route exact path='/app'><Dashboard><div>App</div></Dashboard></Route>
 

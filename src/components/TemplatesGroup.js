@@ -5,7 +5,7 @@ const TemplatesGroup = ({ images = [] }) => {
   return (
     <div className='templates-group'>
       {
-        images.map((image) => <TemplateItem image={image} />)
+        images.map((image) => <TemplateItem key={image} image={image} />)
       }
     </div>
   );
