@@ -5,6 +5,7 @@ import './assets/styles/App.scss';
 // Layouts
 import Landing from './layouts/Landing';
 import Dashboard from './layouts/Dashboard';
+import Application from './pages/Application';
 
 // pages
 import Home from './pages/Home';
@@ -44,7 +45,7 @@ function App() {
         <Route exact path='/dashboard/help'><Dashboard title='preguntas frecuentes'><Questions /></Dashboard></Route>
         <Route exact path='/dashboard/templates'><Dashboard title='plantillas'><TemplatesTabs /></Dashboard></Route>
 
-        <Route exact path='/app'><Dashboard><div>App</div></Dashboard></Route>
+        <Route exact path='/app'><Application /></Route>
 
         <Route path='*'><NotFound /></Route>
       </Switch>

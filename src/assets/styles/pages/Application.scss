@@ -1,0 +1,55 @@
+.application {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  height: 100vh;
+  overflow: hidden;
+
+  &-config {
+    height: 100vh;
+    padding: 10px;
+
+    .ant-tabs-content-holder {
+      height: 82vh;
+      overflow-y: hidden;
+
+      &::-webkit-scrollbar {width: 10px;margin-top: 100px;}
+      &::-webkit-scrollbar-track {background: #f1f1f1;border-radius: 10px;}
+      &::-webkit-scrollbar-thumb {background: #888;border-radius: 10px;}
+      &::-webkit-scrollbar-thumb:hover {background: #555;}
+
+      &:hover {
+        overflow-y: auto;
+      }
+    }
+
+    &__progress {
+      display: flex;
+      height: 5vh;
+
+      a {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &-preview {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(ellipse, $color-gray-95 0%, $color-gray-75 100%);
+    color: $color-white;
+
+    &__top, &__bottom {
+      display: flex;
+      width: 65%;
+      justify-content: space-between;
+    }
+
+    img {
+      width: 65%;
+      margin: 10px 0;
+    }
+  }
+}
