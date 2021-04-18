@@ -1,36 +1,46 @@
 .sidebar {
     background: $color-gray-75;
+    position: relative;
     height: 100vh;
-    width: 100%;
+    width: 260px;
     box-shadow: 0 5px 10px $color-gray-75;
+
+    &__menu {
+        position: absolute !important;
+        right: 5px;
+        top: 5px;
+    }
 
     &-head {
         display: flex;
-        margin: 5px 15px 40px 15px;
-        justify-content: space-between;
+        margin: 21px;
+        justify-content: flex-start;
         align-items: center;
+        color: $color-primary;
+        letter-spacing: 2px;
 
-        &__icon {height: 60px;}
-        &__title {height: 40px;}
+        &__icon {height: 20px;margin-right: 10px;}
     }
 
     &-options{
         width: 100%;
         display: flex;
         flex-direction: column;
+        overflow: hidden !important;
 
         &__link{
             color: $color-white;
             margin: 3px 0;
             margin-left: 15px;
-            padding: 10px;
+            padding: 10px 20px;
+            overflow: hidden !important;
             transition: .5s;
         }
 
-        &__link:hover{
+        &__link:hover {
             color: $color-primary-light;
-            padding: 10px 20px;
-            background-color: $color-gray-95;
+            padding: 10px 30px;
+            background-color: $color-gray-75;
         }
 
         &__icon{
@@ -41,6 +51,6 @@
 
 .active-sidebar {
     color: $color-primary-light !important;
-    background-color: $color-gray-95;
+    background-color: $color-gray-75;
     border-right: 6px solid $color-primary;
 }
