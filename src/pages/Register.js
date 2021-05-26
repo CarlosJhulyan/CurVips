@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-import React from 'react';
-
-const Register = () => (
-  <div>Register</div>
-);
-
-export default Register;
-=======
 import React from 'react';
 
 const Register = () => (
@@ -37,4 +28,3 @@ const Register = () => (
 );
 
 export default Register;
->>>>>>> 56acf8a7774f019ae437711e72f2a1b387ddb6dd
