@@ -1,4 +1,6 @@
-<<<<<<< HEAD
+// layouts
+@import "layouts/Dashboard";
+=======
 @import "variables";
 @import "globals";
 @import "animations";
@@ -13,23 +15,5 @@
 @import "pages/Help";
 @import "pages/Home";
 @import "pages/Templates";
-@import "pages/Application";
-
-// layouts
-@import "layouts/Dashboard";
-=======
-@import "variables";
-@import "globals";
-@import "animations";
-
-// components
-@import "components/Header";
-@import "components/Footer";
-
-//pages
-@import "pages/Help";
-@import "pages/Home";
-@import "pages/Templates";
 @import "pages/Login";
 @import "pages/Register";
->>>>>>> 56acf8a7774f019ae437711e72f2a1b387ddb6dd
