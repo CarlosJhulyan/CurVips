@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-import React from 'react';
-
-const Login = () => (
-  <div>Login</div>
-);
-
-export default Login;
-=======
-
 import React from 'react';
 
 const Login = () => (
@@ -35,4 +25,3 @@ const Login = () => (
 );
 
 export default Login;
->>>>>>> 56acf8a7774f019ae437711e72f2a1b387ddb6dd
